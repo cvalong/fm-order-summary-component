@@ -7,18 +7,119 @@
 }
 
 :root {
-    --clr-primary-one: hsl(225, 100%, 94%)
+    --clr-primary-one: hsl(225, 100%, 94%);
     --clr-primary-two: hsl(245, 75%, 52%);
 
-    --clr-neutral-dark: hsl(225, 100%, 98%)
+    --clr-neutral-light: hsl(225, 100%, 98%);
     --clr-neutral: hsl(224, 23%, 55%);
-    --clr-neutral-light: hsl(223, 47%, 23%);
+    --clr-neutral-dark: hsl(223, 47%, 23%);
 
     --fw-normal: 500;
     --fw-bold: 700;
     --fw-black: 900;
+
+    /* color picked colors */
+    --clr-pick-dark: #D6E1FF;
+    --clr-pick-neutral: #E0E8FF;
+    --clr-pick-light: #F8F9FE;
 }
 
 body {
+    color: var(--clr-neutral);
     font-size: 1rem;
+    font-weight: var(--fw-normal);
+    text-align: center;
+    line-height: 1.5;
+    min-height: 100vh;
+    background-color: var(--clr-primary-one);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: var(--clr-neutral-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 50ch;
+    margin: 1.5em;
+    border-radius: 20px;
+}
+
+.hero {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card-content {
+    padding: 3em;
+}
+
+.title {
+    color: var(--clr-neutral-dark);
+    font-weight: var(--fw-black);
+}
+
+.description {
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+}
+
+.price-container {
+    background-color: hsl(225, 100%, 96%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.price-text {
+    text-align: left;
+    margin: 1em;
+}
+
+.icon {
+    margin: 1em;
+}
+
+.plan-name {
+    color: var(--clr-neutral-dark);
+    font-weight: var(--fw-black);
+    font-size: 1.125em;
+    margin-bottom: 0.4rem;
+}
+
+.modify-link {
+    cursor: pointer;
+    color: var(--clr-primary-two);
+    font-weight: var(--fw-bold);
+    display: block;
+    margin-right: 1em;
+    margin-left: 2em;
+}
+
+.payment-button {
+    cursor: pointer;
+    color: var(--clr-neutral-light);
+    font-size: 0.875rem;
+    font-weight: var(--fw-bold);
+    letter-spacing: 1px;
+    background-color: var(--clr-primary-two);
+    width: 100%;
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+    padding: 1.125em;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+}
+
+.cancel-link {
+    cursor: pointer;
+    color: var(--clr-neutral-dark);
+    font-weight: var(--fw-black);
+    text-decoration: none;
+    display: block;
 }
